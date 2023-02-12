@@ -25,7 +25,7 @@
 </script>
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#nav-bar">
+<body data-bs-spy="scroll" data-bs-target="#nav-bar" class="">
     <nav id="nav-bar">
         <div class="container d-flex justify-content-center position-fixed">
             <ul class="list-unstyled d-flex justify-content-center p-3 px-4 nav-background">
@@ -59,10 +59,10 @@
     </nav>
     <header>
         <div class="container px-5 py-2 header-container">
-            <div class="container d-flex flex-column flex-md-row-reverse justify-content-center align-items-center h-100 pb-3"
+            <div class="container d-flex flex-column flex-md-column flex-lg-row-reverse justify-content-center align-items-center h-100 pb-3"
                 id="Home">
-                <div class="col-12 col-md-6 d-flex justify-content-center align-items-center p-0 mb-4 p-md-0 mb-md-0">
-                    <img src="./assets/header-image.svg" alt="" class="header-image">
+                <div class="col-12 col-md-6 d-flex justify-content-center align-items-center p-0 mb-4 p-md-0 mb-md-0 header__image-container">
+                    <img src="./assets/latest/hero-image.png" alt="" class="header-image">
                 </div>
                 <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center">
                     <div class="container d-flex flex-column align-items-center mb-3 header-titles">
@@ -72,7 +72,7 @@
                     </div>
                     <div class="container mb-3 px-5 px-md-3 px-lg-5">
                         <a href="#Work">
-                        <button class="btn btn-dark w-100 header-button text-uppercase fw-bold" id="button-dark">View my Work</button>
+                        <button class="btn btn-dark w-100 header-button text-uppercase fw-bold" id="button-outline">View my Work</button>
                         </a>
                     </div>
 
@@ -94,28 +94,27 @@
         </div>
     </header>
     <!-- About Section -->
-    <div class="container-fluid background-dark m-0 py-5 px-0" id="About">
-        <div class="container-fluid">
-            <div class="row about__image-row py-2 d-flex justify-content-center align-items-center m-0 col-12">
+    <div class="container-fluid m-0  pb-0 px-0" id="About">
+        <div class="container-fluid d-lg-flex align-items-center px-lg-5">
+            <div class="row about__image-row py-2 d-flex justify-content-center align-items-center m-0">
                 <div class="h-100 d-flex justify-content-center align-items-center p-0 about__image-container">
                     <img src="./assets/me.png" alt="" class="about-image">
                 </div>
             </div>
-            <div class="container mt-2 mt-md-0 px-5 px-md-2 py-2 col-12 col-md-7">
-                <div class="container d-flex flex-column justify-content-center align-items-center">
-                    <h2 class="text-uppercase text-light my-3 mb-1">About</h2>
-                    <hr class="line-seperator line-seperator-white mb-4">
-                    <p class="text-light">I'm a Front-End Developer from Cape Town, South Africa. I have a passion for
+            <div class="container mt-2 mt-md-0 px-5 px-md-5 py-2 pe-lg-0">
+                <div class="container d-flex flex-column justify-content-center align-items-center align-items-lg-start">
+                    <h2 class="text-uppercase text-dark my-3 mb-1 section-title">About</h2>
+                    <p class="text-dark justify-left">I'm a Front-End Developer from Cape Town, South Africa. I have a passion for
                         creating captivating websites and web applications that are easy to use and accessible on any
                         device. I’m an experienced graphic and motion designer turned web developer.
                     </p>
-                    <p class="text-light">I have a keen eye for detail and a strong understanding of web design principles
+                    <p class="text-dark justify-left">I have a keen eye for detail and a strong understanding of web design principles
                         while tapping into my roots as an artist. I am self-driven and focused on developing my skillset as
                         a developer through continous learning.
                     </p>
                     <div class="container p-0">
                         <a href="./assets/SebastianCollison-CV.pdf" download>
-                            <button class="btn btn-outline-light w-100 my-3 header-button text-uppercase fw-bold">Cirriculum
+                            <button class="btn btn-outline-light w-100 my-3 header-button text-uppercase fw-bold" id="button-red">Cirriculum
                             Vitae</button>
                         </a>
                     </div>
@@ -124,147 +123,155 @@
         </div>
         <div class="container mt-2 px-5 py-2">
             <div class="container d-flex flex-column justify-content-center align-items-center p-0">
-                <h2 class="text-uppercase text-light my-3 mb-1">What I do</h2>
-                <hr class="line-seperator line-seperator-white mb-4">
+                <h2 class="text-uppercase text-dark my-3 mb-1 section-title">What I do</h2>
                 <div class="container-fluid d-flex flex-column flex-lg-row justify-content-center p-0">
                     <div class="container d-flex flex-column justify-content-center align-items-center col-12 col-lg-4">
-                        <div class="d-flex justify-content-center py-3">
-                            <div class="card-circle d-flex justify-content-center align-items-center">
-                                <i class="fa-solid fa-code card-icon"></i>
-                            </div>
+                        <div class="d-flex justify-content-center my-3">
+                            <img src="./assets//latest/service-icon-1.png">
                         </div>
                         <div class="card-body d-flex flex-column align-items-center mb-5">
-                            <h5 class="card-title text-light text-uppercase text-center my-3">Web Development</h5>
-                            <p class="card-text text-light text-center px-5 px-md-1">Creating responsive websites using HTML5, CSS
+                            <h2 class="card-title text-dark text-uppercase text-center my-3">Web Development</h2>
+                            <p class="card-text text-dark text-center px-5 px-md-1">Creating responsive websites using HTML5, CSS
                                 and
                                 JavaScript.</p>
-                            <p class="card-text text-light text-center px-5 px-md-1">I work with React as I enjoy creating reusable,
-                                modular components.</p>
                         </div>
                     </div>
                     <div class="container d-flex flex-column justify-content-center align-items-center col-12 col-lg-4">
-                        <div class="d-flex justify-content-center py-3">
-                            <div class="card-circle d-flex justify-content-center align-items-center">
-                                <i class="fa-brands fa-figma card-icon"></i>
-                            </div>
+                        <div class="d-flex justify-content-center my-3">
+                            <img src="./assets//latest/service-icon-2.png">
                         </div>
                         <div class="card-body d-flex flex-column align-items-center mb-5">
-                            <h5 class="card-title text-light text-center text-uppercase my-3">UI/UX DESIGN</h5>
-                            <p class="card-text text-light text-center px-5 px-md-1">Creating UI mockups in Figma as I believe
+                            <h2 class="card-title text-dark text-center text-uppercase my-3">UI/UX DESIGN</h2>
+                            <p class="card-text text-dark text-center px-5 px-md-1">Creating UI mockups in Figma as I believe
                                 planning
                                 is the most essential part of creating a good design.</p>
-                            <p class="card-text text-light text-center px-5 px-md-1">Once you have a good plan, it's easy to execute
-                                your
-                                ideas and create something great.</p>
                         </div>
                     </div>
                     <div class="container d-flex flex-column align-items-center col-12 col-lg-4">
-                        <div class="d-flex justify-content-center py-3">
-                            <div class="card-circle d-flex justify-content-center align-items-center">
-                                <i class="fa-solid fa-pen-ruler card-icon"></i>
-                            </div>
+                        <div class="d-flex justify-content-center my-3">
+                            <img src="./assets//latest/service-icon-3.png">
                         </div>
-                        <div class="card-body d-flex flex-column justify-content-center align-items-center mb-5">
-                            <h5 class="card-title text-light text-uppercase my-3">GRAPHIC DESIGN</h5>
-                            <p class="card-text text-light text-center px-5 px-md-1">Creating logos, captivating brand identities
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center mb-2">
+                            <h2 class="card-title text-dark text-uppercase my-3">GRAPHIC DESIGN</h2>
+                            <p class="card-text text-dark text-center px-5 px-md-1">Creating logos, captivating brand identities
                                 and
                                 social media content using the Adobe Suite.</p>
-                            <p class="card-text text-light text-center px-3 px-md-1">A strong design helps customers identify what
-                                you
-                                offer and what your brand's core values are.</p>
                         </div>
                     </div>
                 </div>
-                <div class="container p-0 d-flex justify-content-center">
-                    <a href="#Contact" class="w-50">
-                    <button class="btn btn-outline-light w-100 my-3 header-button text-uppercase fw-bold">Contact
-                        Me</button>
-                        </a>
-                </div>
+                
             </div>
         </div>
     </div>
     <!-- Skills Section -->
     <div class="container-fluid mt-2 px-5 py-2">
         <div class="row py-3">
-            <h2 class="d-flex justify-content-center m-0 text-uppercase">My Skills</h2>
+            <h2 class="d-flex justify-content-center m-0 text-uppercase section-title">Skills</h2>
         </div>
         <div class="row my-3">
-            <div class="container col-12 d-flex flex-column flex-md-row p-0">
-                <div class="container col-12 col-md-6 progress__card-container">
+            <div class="container col-12 d-flex flex-column p-0">
+                <div class="container col-12 progress__card-container p-0">
 
 
                     <div
-                        class="container skill__card-body p-5 col-12 col-md-6 mb-4 mb-md-0 w-100 d-flex flex-column align-items-center justify-content-center">
-                        <div class="container d-flex align-items-center justify-content-between card__title-container">
-                            <h3 class="m-0 ms-1 text-dark text-uppercase fw-bold py-2">Frontend</h3>
-                            <i class="fa-solid fa-laptop-code text-dark fs-2 me-2 py-2"></i>
+                        class="container skill__card-body p-2 col-12 col-md-6 mb-4 mb-md-0 w-100 d-flex flex-column align-items-center justify-content-center">
+                        <div class="container px-0 d-flex align-items-center justify-content-between card__title-container">
+                            <h3 class="m-0 text-dark text-uppercase fs-1">Design</h3>
+                            
                         </div>
                         <div class="container p-0 d-flex justify-content-center flex-column">
-                            <div class="progress my-4">
-                                <div class="progress-bar text-uppercase d-flex align-items-start ps-3 fw-bold"
-                                    role="progressbar" aria-label="Example with label" style="width: 95%;"
-                                    aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">HTML</div>
+                            <div class="d-flex flex-column my-2">
+                                <h5 class="m-0 fw-normal mt-2 text-lowercase">Photoshop</h5>
+                                <div class="progress">
+                                    <div class="progress-bar text-uppercase d-flex align-items-start ps-3 fw-bold"
+                                        role="progressbar" aria-label="Example with label" style="width: 98%;"
+                                        aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
                             </div>
-                            <div class="progress mb-4">
-                                <div class="progress-bar text-uppercase d-flex align-items-start ps-3 fw-bold"
-                                    role="progressbar" aria-label="Example with label" style="width: 90%;"
-                                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">CSS</div>
+                            <div class="d-flex flex-column my-2">
+                                <h5 class="m-0 fw-normal text-lowercase">Illustrator</h5>
+                                <div class="progress">
+                                    <div class="progress-bar text-uppercase d-flex align-items-start ps-3 fw-bold"
+                                        role="progressbar" aria-label="Example with label" style="width: 90%;"
+                                        aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
                             </div>
-                            <div class="progress mb-4">
-                                <div class="progress-bar text-uppercase d-flex align-items-start ps-3 fw-bold"
-                                    role="progressbar" aria-label="Example with label" style="width: 90%;"
-                                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">Bootstrap</div>
+                            <div class="d-flex flex-column my-2">
+                                <h5 class="m-0 fw-normal text-lowercase">Figma</h5>
+                                <div class="progress">
+                                    <div class="progress-bar text-uppercase d-flex align-items-start ps-3 fw-bold"
+                                        role="progressbar" aria-label="Example with label" style="width: 80%;"
+                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
                             </div>
-                            <div class="progress mb-4">
-                                <div class="progress-bar text-uppercase d-flex align-items-start ps-3 fw-bold"
-                                    role="progressbar" aria-label="Example with label" style="width: 85%;"
-                                    aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">JavaScript</div>
+                            <div class="d-flex flex-column my-2">
+                                <h5 class="m-0 fw-normal text-lowercase">Cinema 4D</h5>
+                                <div class="progress">
+                                    <div class="progress-bar text-uppercase d-flex align-items-start ps-3 fw-bold"
+                                        role="progressbar" aria-label="Example with label" style="width: 70%;"
+                                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
                             </div>
-                            <div class="progress">
-                                <div class="progress-bar text-uppercase d-flex align-items-start ps-3 fw-bold"
-                                    role="progressbar" aria-label="Example with label" style="width: 60%;"
-                                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">React</div>
+                            <div class="d-flex flex-column my-2">
+                                <h5 class="m-0 fw-normal text-lowercase">After Effects</h5>
+                                <div class="progress">
+                                    <div class="progress-bar text-uppercase d-flex align-items-start ps-3 fw-bold"
+                                        role="progressbar" aria-label="Example with label" style="width: 60%;"
+                                        aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="container col-12 col-md-6">
-                    <div
-                        class="container skill__card-body p-5 col-12 col-md-6 w-100 d-flex flex-column align-items-center justify-content-center">
-                        <div class="container d-flex align-items-center justify-content-between card__title-container">
-                            <h3 class="m-0 ms-1 text-dark text-uppercase fw-bold py-2">Design</h3>
-                            <i class="fa-solid fa-eye-dropper text-dark fs-2 me-2 py-2"></i>
+                <div
+                        class="container skill__card-body p-2 col-12 col-md-6 mb-4 mb-md-0 w-100 d-flex flex-column align-items-center justify-content-center">
+                        <div class="container px-0 d-flex align-items-center justify-content-between card__title-container">
+                            <h3 class="m-0 text-dark text-uppercase fs-1">Web</h3>
+                            
                         </div>
                         <div class="container p-0 d-flex justify-content-center flex-column">
-                            <div class="progress my-4">
-                                <div class="progress-bar text-uppercase d-flex align-items-start ps-3 fw-bold"
-                                    role="progressbar" aria-label="Example with label" style="width: 98%;"
-                                    aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">Photoshop</div>
+                            <div class="d-flex flex-column my-2">
+                                <h5 class="m-0 fw-normal mt-2 text-lowercase">HTML</h5>
+                                <div class="progress">
+                                    <div class="progress-bar text-uppercase d-flex align-items-start ps-3 fw-bold"
+                                        role="progressbar" aria-label="Example with label" style="width: 95%;"
+                                        aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
                             </div>
-                            <div class="progress mb-4">
-                                <div class="progress-bar text-uppercase d-flex align-items-start ps-3 fw-bold"
-                                    role="progressbar" aria-label="Example with label" style="width: 90%;"
-                                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">Figma</div>
+                            <div class="d-flex flex-column my-2">
+                                <h5 class="m-0 fw-normal text-lowercase">CSS</h5>
+                                <div class="progress">
+                                    <div class="progress-bar text-uppercase d-flex align-items-start ps-3 fw-bold"
+                                        role="progressbar" aria-label="Example with label" style="width: 90%;"
+                                        aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
                             </div>
-                            <div class="progress mb-4">
-                                <div class="progress-bar text-uppercase d-flex align-items-start ps-3 fw-bold"
-                                    role="progressbar" aria-label="Example with label" style="width: 80%;"
-                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Illustrator</div>
+                            <div class="d-flex flex-column my-2">
+                                <h5 class="m-0 fw-normal text-lowercase">Bootstrap</h5>
+                                <div class="progress">
+                                    <div class="progress-bar text-uppercase d-flex align-items-start ps-3 fw-bold"
+                                        role="progressbar" aria-label="Example with label" style="width: 90%;"
+                                        aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
                             </div>
-                            <div class="progress mb-4">
-                                <div class="progress-bar text-uppercase d-flex align-items-start ps-3 fw-bold"
-                                    role="progressbar" aria-label="Example with label" style="width: 70%;"
-                                    aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">Cinema 4D</div>
+                            <div class="d-flex flex-column my-2">
+                                <h5 class="m-0 fw-normal text-lowercase">JavaScript</h5>
+                                <div class="progress">
+                                    <div class="progress-bar text-uppercase d-flex align-items-start ps-3 fw-bold"
+                                        role="progressbar" aria-label="Example with label" style="width: 70%;"
+                                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
                             </div>
-                            <div class="progress">
-                                <div class="progress-bar text-uppercase d-flex align-items-start ps-3 fw-bold"
-                                    role="progressbar" aria-label="Example with label" style="width: 60%;"
-                                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">After Effects</div>
+                            <div class="d-flex flex-column my-2">
+                                <h5 class="m-0 fw-normal text-lowercase">React</h5>
+                                <div class="progress">
+                                    <div class="progress-bar text-uppercase d-flex align-items-start ps-3 fw-bold"
+                                        role="progressbar" aria-label="Example with label" style="width: 60%;"
+                                        aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
     </div>
@@ -369,21 +376,20 @@
     </div>
 -->
     <!-- Experience Section -->
-    <div class="container-fluid mt-2 px-5 py-5 background-dark" id="Experience">
+    <div class="container-fluid px-5" id="Experience">
         <div class="container d-flex flex-column justify-content-center align-items-center">
-            <h2 class="text-uppercase text-dark py-2 mb-4 px-4 bg-white experience-title">My Experience</h2>
-            <h2 class="text-uppercase text-dark py-2 mb-4 px-4 bg-white experience-title">Work</h2>
-            <div class="col skill__card-container skill__card-border py-4 px-3 mb-3 col-12 col-md-6">
+            <h2 class="text-uppercase py-2 mb-4 px-4 experience-title text-center">Experience</h2>
+            <div class="col skill__card-container skill__card-border py-4 px-3 mb-3 col-12">
                 <div class="row m-0">
                     <div class="container">
                         <div class="container-fluid d-flex flex-column align-items-start justify-content-between">
-                            <h3 class="m-0 ms-1 text-light text-uppercase py-2">GRAPHIC DESIGN & TECH INTERNSHIP</h3>
+                            <h3 class="m-0 ms-1 text-red text-uppercase py-2">GRAPHIC DESIGN & TECH INTERNSHIP</h3>
                             <h5 class="m-0 ms-1 text-muted text-uppercase py-2 experience-subheading">PLATFORM23 | 2021
                             </h5>
                         </div>
                     </div>
                     <div class="container pt-2">
-                        <ul class="text-light">
+                        <ul class="text-red">
                             <li class="mb-3 list-item">Worked alongside the director and head of tech</li>
                             <li class="mb-3 list-item">Product loading and creating CSVs</li>
                             <li class="mb-3 list-item">Responsible for design changes made to the Shopify store</li>
@@ -394,17 +400,17 @@
                     </div>
                 </div>
             </div>
-            <div class="col skill__card-container skill__card-border py-4 px-3 mb-3 col-12 col-md-6">
+            <div class="col skill__card-container skill__card-border py-4 px-3 mb-3 col-12">
                 <div class="row m-0">
                     <div class="container">
                         <div class="container-fluid d-flex flex-column align-items-start justify-content-between">
-                            <h3 class="m-0 ms-1 text-light text-uppercase py-2">WAITRON</h3>
+                            <h3 class="m-0 ms-1 text-red text-uppercase py-2">WAITRON</h3>
                             <h5 class="m-0 ms-1 text-muted text-uppercase py-2 experience-subheading">GREENS RESTAURANT
                                 | 2019 - CURRENT</h5>
                         </div>
                     </div>
                     <div class="container pt-2">
-                        <ul class="text-light">
+                        <ul class="text-red">
                             <li class="mb-3 list-item">Welcome and seat guests</li>
                             <li class="mb-3 list-item">Take orders and enter them into a POS system</li>
                             <li class="mb-3 list-item">Serve food and beverages</li>
@@ -414,17 +420,17 @@
                     </div>
                 </div>
             </div>
-            <div class="col skill__card-container skill__card-border py-4 px-3 mb-3 col-12 col-md-6">
+            <div class="col skill__card-container skill__card-border py-4 px-3 col-12">
                 <div class="row m-0">
                     <div class="container">
                         <div class="container-fluid d-flex flex-column align-items-start justify-content-between">
-                            <h3 class="m-0 ms-1 text-light text-uppercase py-2">DJ AND SOUND MANAGEMENT</h3>
+                            <h3 class="m-0 ms-1 text-red text-uppercase py-2">DJ AND SOUND MANAGEMENT</h3>
                             <h5 class="m-0 ms-1 text-muted text-uppercase py-2 experience-subheading">LIVE AND DIRECT |
                                 2014 - 2018</h5>
                         </div>
                     </div>
                     <div class="container pt-2">
-                        <ul class="text-light">
+                        <ul class="text-red">
                             <li class="mb-3 list-item">Communicated with clients to meet their needs regarding music
                                 choice</li>
                             <li class="mb-3 list-item">Setup and managed both sound and lighting equipment during events
@@ -433,61 +439,62 @@
                     </div>
                 </div>
             </div>
-            <div class="col skill__card-container skill__card-border py-4 px-3 mb-3 col-12 col-md-6">
+            <h2 class="text-uppercase text-red py-2 my-3 px-4 experience-title text-center">Education</h2>
+            <div class="col skill__card-container skill__card-border py-4 px-3 mb-3 col-12">
                 <div class="row m-0">
                     <div class="container">
                         <div class="container-fluid d-flex flex-column align-items-start justify-content-between">
-                            <h3 class="m-0 ms-1 text-light text-uppercase py-2">RESPONSIVE WEB DESIGN</h3>
+                            <h3 class="m-0 ms-1 text-red text-uppercase py-2">RESPONSIVE WEB DESIGN</h3>
                             <h5 class="m-0 ms-1 text-muted text-uppercase py-2 experience-subheading">FREECODECAMP |
                                 2022</h5>
                         </div>
                     </div>
                     <div class="container pt-2">
-                        <ul class="text-light">
+                        <ul class="text-red">
                             <li class="mb-3 list-item">Completed all lessons</li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="col skill__card-container skill__card-border py-4 px-3 mb-3 col-12 col-md-6">
+            <div class="col skill__card-container skill__card-border py-4 px-3 mb-3 col-12">
                 <div class="row m-0">
                     <div class="container">
                         <div class="container-fluid d-flex flex-column align-items-start justify-content-between">
-                            <h3 class="m-0 ms-1 text-light text-uppercase py-2">JAVASCRIPT ALGORITHMS AND DATA
+                            <h3 class="m-0 ms-1 text-red text-uppercase py-2">JAVASCRIPT ALGORITHMS AND DATA
                                 STRUCTURES</h3>
                             <h5 class="m-0 ms-1 text-muted text-uppercase py-2 experience-subheading">FREECODECAMP |
                                 2022</h5>
                         </div>
                     </div>
                     <div class="container pt-2">
-                        <ul class="text-light">
+                        <ul class="text-red">
                             <li class="mb-3 list-item">Completed 51 of 299 lessons</li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="col skill__card-container skill__card-border py-4 px-3 mb-3 col-12 col-md-6">
+            <div class="col skill__card-container skill__card-border py-4 px-3 mb-3 col-12">
                 <div class="row m-0">
                     <div class="container">
                         <div class="container-fluid d-flex flex-column align-items-start justify-content-between">
-                            <h3 class="m-0 ms-1 text-light text-uppercase py-2">BACHELOR OF DESIGN</h3>
+                            <h3 class="m-0 ms-1 text-red text-uppercase py-2">BACHELOR OF DESIGN</h3>
                             <h5 class="m-0 ms-1 text-muted text-uppercase py-2 experience-subheading">INSCAPE DESIGN
                                 COLLEGE | 2021</h5>
                         </div>
                     </div>
                     <div class="container pt-2">
-                        <ul class="text-light">
+                        <ul class="text-red">
                             <li class="mb-3 list-item">Completed 120 credits towards a BDes</li>
                             <li class="mb-3 list-item">7 Destinctions</li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="col skill__card-container skill__card-border py-4 px-3 mb-3 col-12 col-md-6">
+            <div class="col skill__card-container skill__card-border py-4 px-3 mb-3 col-12">
                 <div class="row m-0">
                     <div class="container">
                         <div class="container-fluid d-flex flex-column align-items-start justify-content-between">
-                            <h3 class="m-0 ms-1 text-light text-uppercase py-2">NATIONAL SENIOR CERTIFICATE</h3>
+                            <h3 class="m-0 ms-1 text-red text-uppercase py-2">NATIONAL SENIOR CERTIFICATE</h3>
                             <h5 class="m-0 ms-1 text-muted text-uppercase py-2 experience-subheading">EDGEMEAD HIGH
                                 SCHOOL | 2014 - 2018</h5>
                         </div>
@@ -500,7 +507,7 @@
     <div class="container-fluid mt-5 px-5 py-2" id="Work">
         <div class="container d-flex flex-column justify-content-center align-items-center">
             <div class="container d-flex justify-content-between p-0 mb-1">
-                <h2 class="text-dark py-2 m-0">Projects</h2>
+                <h2 class="text-dark py-2 m-0 text-uppercase">Web Projects</h2>
                 <h2 class="text-uppercase text-dark py-2 m-0">3</h2>
             </div>
             <hr class="line-seperator line-seperator-black mb-4 w-100">
@@ -567,7 +574,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="container d-flex justify-content-center p-0 mb-5">
+                    <div class="container d-flex justify-content-center p-0">
                         <div class="container p-0">
                             <a href="https://github.com/ZequilaX/Saint-Cupid" target="_blank">
                             <button class="btn btn-outline-dark w-100 header-button">GitHub</button>
@@ -579,7 +586,7 @@
         </div>
     </div>
     <!-- Gallery Section -->
-    <div class="container-fluid px-5 py-5 background-dark">
+    <div class="container-fluid px-5 py-3">
         <div class="container d-flex flex-column justify-content-center align-items-center my-3 col-12">
             <div class="row p-4 gallery-container d-flex flex-column flex-lg-row">
                 <div class="container col-12 col-lg-6">
@@ -587,26 +594,25 @@
                 </div>
                 <div class="container col-12 col-lg-6 d-flex flex-column justify-content-center">
                     <div class="container px-4 mt-4 d-flex justify-content-center">
-                        <h3 class="text-uppercase text-light text-center">A Collection of my Artworks</h3>
+                        <h3 class="text-uppercase text-center">A Collection of my Artworks</h3>
                     </div>
                     <div class="container p-0 d-flex justify-content-center mt-3">
                         <a href="./gallery.html" target="_blank">
-                        <button class="btn text-uppercase header-button" id="gallery-button">View Gallery</button>
+                        <button class="btn text-uppercase header-button" id="button-red">View Gallery</button>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid px-5 background-dark">
-        <div class="container d-flex flex-column flex-lg-row justify-content-center align-items-center col-12">
+    <div class="container-fluid px-5">
+        <div class="container d-flex flex-column flex-lg-row justify-content-center align-items-center col-12 spotify-section">
             <div class="container d-flex flex-column justify-content-center">
                 <div class="container d-flex justify-content-center p-0 mb-1">
-                    <h3 class="text-uppercase text-light text-center m-0">If you read this far,<br> you <span
-                            class="text-pink">deserve</span> this.</h3>
+                    <h3 class="text-uppercase text-red text-center m-0">If you read this far,<br> you <span
+                            class="text-blue">deserve</span> this.</h3>
                 </div>
                 <div class="container d-flex justify-content-center">
-                    <hr class="line-seperator line-seperator-white mb-2">
                 </div>
             </div>
             <div class="container">
@@ -617,7 +623,7 @@
                         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                         loading="lazy"></iframe>
                 </div>
-                <div class="container p-0 d-flex justify-content-center mb-5">
+                <div class="container p-0 d-flex justify-content-center ">
                     <button class="btn w-50 text-uppercase header-button fw-bold" id="spotify-button">
                         <a href="https://open.spotify.com/playlist/19qFWIid6oivwJTSCaz0Mf?go=1&utm_source=embed_player_m&utm_medium=desktop" target="_blank">Play on
                         Spotify</a>
@@ -628,14 +634,14 @@
     </div>
     <!-- Contact Section -->
     <div class="container-fluid p-0 contact-container">
-        <div class="container p-5" id="Contact">
+        <div class="container p-5 px-md-0" id="Contact">
             <div class="container">
-                <h2 class="text-center">Let's Get in Touch</h2>
+                <h2 class="text-center text-uppercase">Let's Get in Touch</h2>
             </div>
             <div class="container d-flex justify-content-center">
-                <hr class="line-seperator my-3">
+                <hr class="line-seperator my-1">
             </div>
-            <div class="container">
+            <div class="container mb-3">
                 <ul class="list-unstyled d-flex justify-content-center">
                     <li>
                         <a class="social-button" href="https://github.com/ZequilaX" target="_blank">
@@ -650,7 +656,7 @@
                                 height="24"></i></a></li>
                 </ul>
             </div>
-            <div class="container col-12 col-md-8">
+            <div class="container col-12 col-md-10">
                 <form class="mb-5">
                     <div class="form-floating mb-3">
                         <input type="text" class="form-control px-4" id="firstName" placeholder="John">
@@ -674,7 +680,7 @@
                         <label for="messageContent" class="px-4">Message</label>
                     </div>
                     <div class="my-3 d-flex">
-                        <button class="btn btn-dark text-uppercase header-button mb-5" type="submit" id="button-dark" onclick="sendMail()">Send
+                        <button class="btn text-uppercase header-button mb-5" type="submit" id="submit-button" onclick="sendMail()">Send
                             Message</button>
                     </div>
                 </form>
